@@ -11,3 +11,15 @@ dependencies = [
     "python-dotenv>=1.2.2",
     "tavily-python>=0.7.26",
 ]
+
+[dependency-groups]
+dev = [
+    "pre-commit>=4.6.0",
+    "ruff>=0.15.17",
+]
+
+[tool.ruff]
+line-length = 88
+
+[tool.ruff.format]
+quote-style = "double"
