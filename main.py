@@ -6,6 +6,7 @@ from tools import tools
 
 agent = create_agent(model=llm, tools=tools)
 
-prompt = HumanMessage("What is the weather in my location?")
+
+prompt = HumanMessage(str(input("Enter your prompt here: ")))
 response = agent.invoke({"messages": [prompt]})
 print(response)
